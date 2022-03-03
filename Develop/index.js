@@ -35,14 +35,13 @@ const questions = [
         name: 'tests',
       },
       {
-         type: 'checkbox',
+         type: 'list',
          message: 'Choose a license for your project.',
          choices: [
           'Apache',
           'MIT',
-          'Mozilla-Public',
-          'GNU-General-Public',
-          'Common-Development-and Distribution',
+          'Mozilla',
+          'GNU',
           'None'
          ],
          name: 'license',
