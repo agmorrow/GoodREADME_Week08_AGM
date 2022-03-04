@@ -13,16 +13,21 @@ function renderLicenseLink(license) {
     return `[MIT](https://opensource.org/licenses/MIT)`;
   } else if (license === 'Mozilla') {
     return `[Mozilla](https://opensource.org/licenses/MPL-2.0)`;
-  } else if(license === 'GNU') {
+  } else if (license === 'GNU') {
     return `[GNU](https://www.gnu.org/licenses/agpl-3.0)`;
-} else {
+  } else {
     return `[None](https://www.boost.org/LICENSE_1_0.txt)`;
-};
+  };
 };
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {};
+function renderLicenseSection(license) {
+  return `
+  This license is covered under ${renderLicenseLink(license)}
+  * If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/)`
+
+};
 
 // TODO: Create a function to generate markdown for README
 
@@ -48,12 +53,11 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License:
-  This license is covered under ${renderLicenseLink(data.license)}
-  * If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/)
-
+  ${renderLicenseSection(data.license)}
   
 
   ## Contribution Guidelines:
+  If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
   ${data.contribution}
 
   ## Test Instructions:
