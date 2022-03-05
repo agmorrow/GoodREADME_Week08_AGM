@@ -11,6 +11,10 @@ I was given a task to create a command-line application that produces a high-qua
 ```bash
 https://nodejs.org/en/download/
 ```
+- Make sure you install node_modules to your file
+```bash
+npm i
+```
 - The application is involked by using the following command:
 ```bash
 node index.js
