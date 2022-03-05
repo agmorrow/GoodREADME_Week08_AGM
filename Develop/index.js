@@ -72,7 +72,7 @@ function init() {
     )
     .then(function (userInput) {
       console.log(userInput)
-      writeToFile("SAMPLEREADME.md", generateMarkdown(userInput));
+      writeToFile("README.md", generateMarkdown(userInput));
     });
 };
 
