@@ -18,8 +18,14 @@ node index.js
 
 ## Usage
 
+### Walk through video
+
 ## Credits
 DU Bootcamp Lectures - Week 08
+
+
+https://user-images.githubusercontent.com/82473623/156900332-fb9e7719-3706-4237-83ec-c5b4caaa32db.mp4
+
 
 ## MIT License 
 
